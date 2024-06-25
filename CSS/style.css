@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap');
+
+body{
+    background-color: #f7ecde;
+    height: 100vh;
+}
+
+#title_main{
+    color: #352e28;
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+   isolation: isolate;
+  width: fit-content;
+    
+    
+}
+
+#title_main::before{ 
+    content: '';
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    background-color: #fec260;
+    bottom: 10px;
+    left: 0;
+    z-index: -1;
+    transition: Height 350ms;
+    
+}
+
+#title_main:hover::before{ 
+    height: 50%;
+}
+
+#title_secondary{
+    font-family: "Righteous", cursive;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
